@@ -1,0 +1,13 @@
+python main.py \
+    --data_root ../dataset/kitti_odometry \
+    --epochs 90 \
+    --train_list 0 1 2 3 4 5 6 \
+    --val_list  7 8 9 10 \
+    --test_list 0 1 2 3 4 5 6 7 8 9 10 \
+    --mode train \
+    --gpu 4 \
+    --batch_size 16 \
+    --lr 0.0006 \
+    --optimizer adam \
+    --weight_decay  1e-6 \
+    --ckpt Main_model3_fps_-23.33592446773283_2023_04_04_03_19.pth \
